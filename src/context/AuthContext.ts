@@ -14,7 +14,7 @@ export const AuthContext = () => {
 
   const handleLogin = (
     {email, password}: UserEntity,
-    onRegister: (user: UserEntity) => void,
+    onLogin: (user: UserEntity) => void,
     onError: (error: string) => void,
   ) => {
     auth()
@@ -32,7 +32,7 @@ export const AuthContext = () => {
           .doc(uid)
           .set(data)
           .then(() => {
-            onRegister(data);
+            onLogin(data);
           })
           .catch((error: string) => {
             onError(error);

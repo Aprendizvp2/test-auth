@@ -14,25 +14,27 @@ export const Breeds = () => {
 
   return (
     <View flex backgroundColor={appColors.BACKGROUND_SCREEN_COLOR} padding-16>
-      <IconButton
-        style={styles.signOutButton}
-        icon={<SignOutIcon width={24} height={24} color={appColors.BLACK} />}
-        onPress={handleSignOut}
-      />
-      <Text style={styles.title} center marginV-10>
-        Dog breeds
-      </Text>
-      <ScrollView
-        refreshControl={
-          <RefreshControl refreshing={isLoading} onRefresh={refetch} />
-        }
-        bounces
-        showsVerticalScrollIndicator={true}>
-        <FastImage style={styles.imageBreed} source={{uri: breedImage}} />
-        <Text style={styles.text} center color="black">
-          Reload the page to change the image.
+      <View>
+        <IconButton
+          style={styles.signOutButton}
+          icon={<SignOutIcon width={24} height={24} color={appColors.BLACK} />}
+          onPress={handleSignOut}
+        />
+        <Text style={styles.title} center marginV-10>
+          Dog breeds
         </Text>
-      </ScrollView>
+        <ScrollView
+          refreshControl={
+            <RefreshControl refreshing={isLoading} onRefresh={refetch} />
+          }
+          bounces
+          showsVerticalScrollIndicator={true}>
+          <FastImage style={styles.imageBreed} source={{uri: breedImage}} />
+          <Text style={styles.text} center color="black">
+            Reload the page to change the image.
+          </Text>
+        </ScrollView>
+      </View>
     </View>
   );
 };
@@ -40,8 +42,8 @@ export const Breeds = () => {
 const styles = StyleSheet.create({
   signOutButton: {
     position: 'absolute',
-    top: 10,
-    right: 20,
+    top: 0,
+    right: 0,
   },
   imageBreed: {
     width: '100%',
