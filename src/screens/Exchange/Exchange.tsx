@@ -65,9 +65,8 @@ export const Exchange = () => {
 
 const styles = StyleSheet.create({
   signOutButton: {
-    position: 'absolute',
-    top: 10,
-    right: 20,
+    top: 0,
+    right: 0,
   },
   title: {
     fontSize: 20,

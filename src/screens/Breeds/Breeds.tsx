@@ -41,7 +41,6 @@ export const Breeds = () => {
 
 const styles = StyleSheet.create({
   signOutButton: {
-    position: 'absolute',
     top: 0,
     right: 0,
   },
