@@ -1,0 +1,1 @@
+export {Newspaper} from './Newspaper';

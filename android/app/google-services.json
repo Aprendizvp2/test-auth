@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "806701865871",
+    "project_id": "testauth-24cce",
+    "storage_bucket": "testauth-24cce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806701865871:android:c325af8e2be2a84c5109fa",
+        "android_client_info": {
+          "package_name": "com.testauth.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrLlvO449ZK54T2QyEnVgjGVZpaacwsM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
